@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --color-zinc50: #fafafa;
+  --color-zinc100: #f4f4f5;
+  --color-zinc200: #e4e4e7;
+  --color-zinc300: #d4d4d8;
+  --color-zinc400: #a1a1aa;
+  --color-zinc500: #71717a;
+  --color-zinc600: #52525b;
+  --color-zinc800: #27272a;
+  --color-orange: #f64617;
+}
+
+button {
+  cursor: pointer;
+}
+
+@layer components {
+  .btn-primary {
+    @apply h-14 px-[30px] py-2.5 flex items-center gap-5 font-medium rounded-full;
+  }
+
+  .btn-skill {
+    @apply py-4 pl-4 pr-6 font-medium rounded-[20px] outline outline-zinc200 flex items-center gap-2 bg-zinc50;
+  }
+
+  .bg-primary-gradient {
+    @apply bg-[radial-gradient(100%_100%_at_100%_50%,_#F64617_0%,_#FD6E32_100%)];
+  }
+  .bg-secondary-gradient {
+    @apply bg-[radial-gradient(66.51%_66.51%_at_66.51%_50%,_#1747F6_0%,_#7290FF_100%)];
+  }
+
+  .shadow-primary {
+    @apply shadow-[0_4px_24px_0_rgba(246,70,23,0.3)];
+  }
+  .shadow-secondary {
+    @apply shadow-[0_4px_24px_0_rgba(34,80,247,0.3)];
+  }
+}
+
+/*      Fonts      */
+.captcha-font {
+  font-family: "Fredericka the Great";
+  font-size: 1.5em;
+  letter-spacing: 1em;
+  text-decoration: line-through;
+  text-shadow: 1em;
+}
+
+/*      Buttons      */
+.btn-motion > span {
+  position: relative;
+  overflow: hidden;
+}
+.btn-motion:hover > span > p {
+  animation: MoveUpInitial 0.3s forwards, MoveUpEnd 0.3s forwards 0.3s;
+}
+
+@keyframes MoveUpInitial {
+  to {
+    transform: translate3d(0, -105%, 0);
+  }
+}
+@keyframes MoveUpEnd {
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* text animation */
+.text-motion {
+  position: relative;
+  overflow: hidden;
+}
+.text-motion:hover > p {
+  animation: MoveUpInitial 0.3s forwards, MoveUpEnd 0.3s forwards 0.3s;
+}
+
+/* navbar progressive blur */
+.progressive-blur {
+  backdrop-filter: blur(20px);
+  mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.99) 20%,
+    rgba(0, 0, 0, 0.9) 40%,
+    rgba(0, 0, 0, 0.7) 60%,
+    rgba(0, 0, 0, 0.5) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
