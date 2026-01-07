@@ -1,12 +1,12 @@
 import Hero from "@/components/home/Hero";
 import About from "@/components/home/About";
 import ClientSlider from "@/components/sliders/ClientSlider";
-// import FAQ from "@/components/FAQ";
-// import GetInTouch from "@/components/GetInTouch";
-// import Process from "@/components/home-sections/Process";
-// import Service from "@/components/home-sections/Service";
-// import Projects from "@/components/home-sections/Projects";
-// import Testimonial from "@/components/Testimonial";
+import Projects from "@/components/home/Projects";
+import Process from "@/components/home/Process";
+import Testimonial from "@/components/Testimonial";
+import Service from "@/components/home/Service";
+import FAQ from "@/components/FAQ";
+import GetInTouch from "@/components/GetInTouch";
 
 const Home = () => {
   return (
@@ -14,12 +14,12 @@ const Home = () => {
       <Hero />
       <About />
       <ClientSlider />
-      {/* <Projects />
+      <Projects />
       <Testimonial />
       <Process />
       <Service />
       <FAQ />
-      <GetInTouch /> */}
+      <GetInTouch />
     </div>
   );
 };

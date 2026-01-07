@@ -1,7 +1,7 @@
 import "../style/index.css";
 import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
-// import Footer from "@/components/shared/Footer";
+import Footer from "@/components/Footer";
 // import SmoothScroll from "@/components/SmoothScroll";
 // import PageTransition from "@/components/PageTransition";
 
@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
           {/* <PageTransition> */}
           <main className="w-full">{children}</main>
           {/* </PageTransition> */}
-          {/* <Footer /> */}
+          <Footer />
         </body>
       {/* </SmoothScroll> */}
     </html>

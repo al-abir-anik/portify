@@ -1,7 +1,7 @@
 import Image from "next/image";
 import HeroSlider from "../sliders/HeroSlider";
-// import Rating from "../Rating";
 import Button from "../Button";
+import Rating from "../Rating";
 
 const Hero = () => {
   return (
@@ -36,7 +36,7 @@ const Hero = () => {
           <div className="md:w-[362px] lg:w-[476px] h-fit pb-7 flex flex-col gap-7">
             <div className="flex flex-col gap-3">
               <div className="w-[314px] flex items-center gap-3">
-                {/* <Rating rating="4.9 / 5" /> */}
+                <Rating rating="4.9 / 5" />
                 <p className="text-sm text-zinc500">
                   Helped 120+ businesses & counting
                 </p>
