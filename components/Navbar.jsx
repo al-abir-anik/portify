@@ -47,12 +47,12 @@ const Navbar = () => {
               </Link>
 
               <Link
-                href="/my-works"
+                href="/all-projects"
                 className={`hover:text-orange transition ${
-                  pathname === "/my-works" && "text-orange font-medium"
+                  pathname === "/all-projects" && "text-orange font-medium"
                 }`}
               >
-                My Works
+                All Projects
               </Link>
 
               <Link
@@ -139,12 +139,12 @@ const Navbar = () => {
                   </Link>
 
                   <Link
-                    href="/my-works"
+                    href="/all-works"
                     className={`hover:text-orange transition ${
-                      pathname === "/my-works" && "text-orange font-medium"
+                      pathname === "/all-projects" && "text-orange font-medium"
                     }`}
                   >
-                    My Works
+                    All Projects
                   </Link>
 
                   <Link

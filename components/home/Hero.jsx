@@ -12,7 +12,7 @@ const Hero = () => {
           {/* name */}
           <div className="w-fit">
             <div className="flex items-center gap-10">
-              <p className="text-[96px] font-medium leading-[130%]">Alex</p>
+              <p className="text-[96px] font-medium leading-[130%]">Dex</p>
               <div
                 className="w-[90px] h-[90px] relative overflow-hidden rounded-[22.5px] border-6 border-white select-none"
                 style={{
@@ -29,7 +29,7 @@ const Hero = () => {
                 />
               </div>
             </div>
-            <p className="text-[96px] font-medium leading-[130%]">Morgan.</p>
+            <p className="text-[96px] font-medium leading-[130%]">Morgan</p>
           </div>
 
           {/* details */}
