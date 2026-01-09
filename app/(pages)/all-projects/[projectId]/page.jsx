@@ -1,13 +1,10 @@
 import GetInTouch from "@/components/GetInTouch";
-import StartAProject from "@/components/StartAProject";
 import { oswald } from "@/lib/fonts";
-import Image from "next/image";
 
 const ProjectDetailsPage = async ({ params }) => {
   const { projectId } = await params;
 
   console.log(projectId);
-  
 
   const res = await fetch(
     `http://localhost:3000/api/projects?url=${projectId}`
@@ -166,10 +163,9 @@ const ProjectDetailsPage = async ({ params }) => {
         </figure>
       </section>
 
-      <StartAProject />
       <GetInTouch />
     </>
   );
 };
 
-export default WorkDetailsPage;
+export default ProjectDetailsPage;
