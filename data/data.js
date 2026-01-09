@@ -253,57 +253,6 @@ export const experience = [
   },
 ];
 
-export const works = [
-  {
-    url: "zoho",
-    title: "Zoho",
-    year: "2023",
-    description:
-      "This project tackles core challenge by building a intuitive digital experience focused on maximizing conversions.",
-    image: "/images/works-bg.png",
-  },
-  {
-    url: "poho",
-    title: "Poho",
-    year: "2022",
-    description:
-      "This project tackles core challenge by building a intuitive digital experience focused on maximizing conversions.",
-    image: "/images/works-bg.png",
-  },
-  {
-    url: "moho",
-    title: "Moho",
-    year: "2021",
-    description:
-      "This project tackles core challenge by building a intuitive digital experience focused on maximizing conversions.",
-    image: "/images/works-bg.png",
-  },
-  {
-    url: "yoho",
-    title: "Yoho",
-    year: "2024",
-    description:
-      "This project tackles core challenge by building a intuitive digital experience focused on maximizing conversions.",
-    image: "/images/works-bg.png",
-  },
-  {
-    url: "koho",
-    title: "Koho",
-    year: "2025",
-    description:
-      "This project tackles core challenge by building a intuitive digital experience focused on maximizing conversions.",
-    image: "/images/works-bg.png",
-  },
-  {
-    url: "ooho",
-    title: "Ooho",
-    year: "2025",
-    description:
-      "This project tackles core challenge by building a intuitive digital experience focused on maximizing conversions.",
-    image: "/images/works-bg.png",
-  },
-];
-
 export const faq = [
   {
     question: "What services do you offer?",

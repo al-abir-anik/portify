@@ -5,7 +5,7 @@ import GetInTouch from "@/components/GetInTouch";
 import AboutSlider from "@/components/sliders/AboutSlider";
 import StartProject from "@/components/StartProject";
 
-const About = () => {
+const AboutPage = () => {
   return (
     <>
       {/* hero section */}
@@ -55,4 +55,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { upArrowGradientIcon } from "@/data/icons";
 import Link from "next/link";
 
-const ProjectCard = ({ work }) => {
+const ProjectCard = ({ project }) => {
   const easing = [0.66, 0, 0.01, 1];
 
   const bgVariants = {
@@ -32,7 +32,7 @@ const ProjectCard = ({ work }) => {
       {/* Background image */}
       <motion.div
         className="absolute inset-0 bg-center bg-cover"
-        style={{ backgroundImage: `url(${work.image})` }}
+        style={{ backgroundImage: `url(${project.image})` }}
         variants={bgVariants}
         transition={{ duration: 0.6, ease: easing }}
       />
@@ -48,13 +48,13 @@ const ProjectCard = ({ work }) => {
           transition={{ duration: 0.6, ease: easing }}
           className="w-fit h-12 py-2 px-[26px] flex items-center gap-[18px] text-sm font-medium text-zinc-800 bg-white rounded-full"
         >
-          <p>{work.title}</p>
+          <p>{project.title}</p>
           <p>/</p>
-          <p>{work.year}</p>
+          <p>{project.year}</p>
         </motion.div>
 
         {/* Button */}
-        <Link href={`my-works/${work.url}`}>
+        <Link href={`project/${project.url}`}>
           <motion.div
             variants={btnVariants}
             transition={{ duration: 0.6, ease: easing }}
@@ -69,14 +69,14 @@ const ProjectCard = ({ work }) => {
       <div className="xl:hidden w-full h-fit p-[18px] flex justify-between absolute bottom-0 left-0 z-10">
         {/* Title */}
         <div className="w-fit h-12 py-2 px-[26px] flex items-center gap-[18px] text-sm font-medium text-zinc-800 bg-white rounded-full">
-          <p>{work.title}</p>
+          <p>{project.title}</p>
           <p>/</p>
-          <p>{work.year}</p>
+          <p>{project.year}</p>
         </div>
 
         {/* Button */}
         <Link
-          href={`my-works/${work.url}`}
+          href={`project/${project.url}`}
           className="w-12 h-12 grid place-items-center bg-white/90 outline-1 outline-white rounded-full backdrop-blur-md"
         >
           {upArrowGradientIcon}
