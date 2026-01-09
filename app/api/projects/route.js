@@ -59,6 +59,5 @@ export async function GET(req) {
     const project = allProjects.find((p) => p.url === projectId);
     return Response.json(project || {});
   }
-
   return Response.json(allProjects);
 }
