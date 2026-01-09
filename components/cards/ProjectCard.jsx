@@ -54,7 +54,7 @@ const ProjectCard = ({ project }) => {
         </motion.div>
 
         {/* Button */}
-        <Link href={`project/${project.url}`}>
+        <Link href={`all-projects/${project.url}`}>
           <motion.div
             variants={btnVariants}
             transition={{ duration: 0.6, ease: easing }}

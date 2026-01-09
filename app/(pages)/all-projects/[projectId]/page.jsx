@@ -7,9 +7,9 @@ const ProjectDetailsPage = async ({ params }) => {
   console.log(projectId);
 
   const res = await fetch(
-    `http://localhost:3000/api/projects?url=${projectId}`
+    `https://portify-aaa.vercel.app/api/projects?url=${projectId}`
   );
-  // https://portfolio-template-zeta-murex.vercel.app
+  // https://portify-aaa.vercel.app
   const project = await res.json();
 
   if (!project || !project.title) {
